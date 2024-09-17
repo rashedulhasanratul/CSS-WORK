@@ -1,0 +1,45 @@
+/* practice of translation, transition, transform, opacity, Alpha channel*/
+main {
+  width: 500px;
+  height: 500px;
+  /* background-color: bisque; */
+  position: relative;
+}
+
+.box {
+  background-color: lightcoral;
+  /* background-image: url('https://images.unsplash.com/photo-1725109431834-bed0465b6302?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -45px; /* bakground position property*/
+  
+  /* alpha channel uses only for background transparency*/
+  /* opacity: 0.5;*/ /* use opacity, when we need to apply transparency on the background and within the content */
+  width: 300px;
+  height: 150px;
+  /* transform: scale(2); it's not iceasing the width or height,just its works like Zooming */
+  /* transform-origin: 0% 0% ; we can set the origin , from where it can expand */
+  /* transform: rotate(120deg); */
+  /* transform: translateY(100px); */
+  /* margin-top: 100px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 30px 30px 0px 10px rgba(76, 74, 74, 0.728); */
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: rgba(34, 87, 157, 0.35) 0px 5px 15px;
+  /* transition: all 200ms; bad practice */
+  transition: transform 500ms; /*apply to animate property*/
+}
+
+h1 {
+  /* text-shadow: 5px 3px 5px rgba(90, 53, 2, 0.792); */
+  color: aqua;
+}
+.box:hover {
+    background-color: violet;
+    transform:translate(-50%, -50%) rotate(-45deg) scale(1.5);
+}
