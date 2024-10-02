@@ -1,0 +1,42 @@
+/* Overflow concept */
+
+body{
+    font-family: sans-serif;
+}
+
+.box{
+    font-size: 4rem;
+    border: 5px solid ;
+    width: 100%;
+    /* max-width: 400px; */
+    height: 300px;
+    /* overflow: auto; */
+    /* overflow: none; */
+    /* overflow: scroll; */
+    /* overflow: visible; */ 
+    overflow: scroll;
+    /* overflow-y: hidden; */
+    /* overflow-y: visible; */
+}
+/* @media (width < 300px){
+    .box{
+        font-size: 2em;
+    }
+} */
+
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the vertical scrollbar */
+    height: 10px; /* Set the height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey; /* Background of the scrollbar track */
+    border-radius: 5px; /* Rounded corners for the track */
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+    width:30px;
+    height:20px;
+}
