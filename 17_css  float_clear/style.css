@@ -1,0 +1,21 @@
+img{
+    float: left;
+    margin-right: 0.5rem;
+    margin-left: 0.8rem;
+    width: 400px;
+}
+
+/* a{
+    width: 200px;
+     float: left;
+} */
+
+.first-paragraph{
+    /* background-color: green; */
+    /* clear:left; */
+}
+.container{
+    background-color: yellow;
+    /* overflow:auto */
+    display: flow-root; 
+}
