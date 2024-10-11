@@ -38,7 +38,7 @@ body{
     padding: 16px;
     color:grey;
     border: 1px solid grey;
-    height: 40px;
+    min-height: 35px;
 }
 .nav-div img{
     width: 65px;
