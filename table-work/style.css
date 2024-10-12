@@ -1,9 +1,51 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-weight:500;
+    
+}
 *{
     box-sizing: border-box;
 }
+section{
+    margin:1rem;
+    border: 2px solid rgb(214, 205, 205);
+    padding: 10px;
+    border-radius: 8px;
+    width: 800px;
+    max-height: 420px;
+}
+
+.info img{
+    height: 10px;
+    width: 13px;
+}
+.download-btn img{
+    margin-right: 6px;
+}
+.info{
+    margin-block:-20px;
+    display: flex;
+    justify-content: space-between;
+}
+.download-btn{
+    background-color: white;
+    height:25px;
+    align-self: center;
+    padding-inline: 15px; 
+    border: 0.5px solid gray ; 
+    border-radius: 4px;
+    box-shadow: 0.5px 0.5px 1px gray; 
+}
+
+/* table style work */
+
 .main-table{
-    /* border: 2px solid burlywood; */
-    margin-top: 20px;
+    border-collapse:collapse ;
+}
+.table-wrapper{
+    margin-top: 1rem;
+    max-height: 350px;
+    overflow: auto;
 }
 .main-table th{
     background-color: rgb(68, 68, 224);
@@ -11,7 +53,8 @@
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 .main-table th,td{
     padding-left: 10px;
@@ -24,23 +67,12 @@ td{
     white-space: nowrap;
     overflow: hidden;
     text-transform: uppercase;
+    color: rgb(85, 77, 77);
 }
 td:first-child{
     text-align: left;
 }
-.main-table th{
-    position: sticky;
-    top: 0;
- }
 
-.table-container{
-    margin:1rem;
-    border: 2px solid rgb(214, 205, 205);
-    padding: 10px;
-    border-radius: 8px;
-    width: 800px;
-    max-height: 420px;
-}
 ::-webkit-scrollbar{
     width: 8px;
     height: 8px;
@@ -49,31 +81,21 @@ td:first-child{
     background: rgb(207, 198, 198);
     border-radius: 5px;
 }
-.text{
-    margin-block:-20px;
-    display: flex;
-    justify-content: space-between;
-}
-.btn{
-    height:20px;
-    align-self: center;
-    padding-inline: 5px;   
-}
-.text img{
-    height: 10px;
-    width: 10px;
-}
-
-.table-div{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    /* border: 2px solid green; */
-    max-height: 350px;
-    overflow: auto;
-}
-th:nth-child(7) {
-    position: sticky;
-  }
 .main-table img{
     width: 15px;
+}
+
+/* sticky column action */
+
+.table-header-action-column{
+    /* position: sticky; */
+    right: 0;
+    background-color: rgb(68, 68, 224);
+    top: 0;
+    z-index: 1;
+}
+.table-row-action-column{
+    position: sticky;
+    right: 0;
+    background-color: white;
 }
